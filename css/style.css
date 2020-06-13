@@ -11,7 +11,8 @@ body {
   background-image: url("../images/bg-desktop.svg");
   /* width: 100%; */
   background-repeat: no-repeat;
-  background-position: -4px -11px;
+  background-size: contain;
+  /* background-position: -4px -11px; */
   min-height: 100vh;
   color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -88,4 +89,59 @@ button:hover {
   height: 30px;
   width: 30px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    background-image: url('/images/bg-mobile.svg');
+    background-size: contain;
+    background-position: center top;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+	.flex {
+    flex-direction: column;
+    text-align: center;
+		/* margin: 50px 0; */
+  }
+
+  .flex > div:first-child {
+    flex: 1;
+  }
+  
+  .flex > div:last-child {
+    flex: 1;
+  }
+  
+  h1 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  button {
+    background-color: #fff;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 20px 15px hsla(257, 40%, 49%);
+    color: hsl(257, 40%, 49%);
+    font-size: 20px;
+    width: 75%;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+
+  /* p {
+    font-size: 35px;
+  } */
+
+  .social-links {
+    justify-content: center;
+  }
+  
 }
